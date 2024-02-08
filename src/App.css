@@ -22,6 +22,7 @@ p{
   --primary:#5e3bee;
   --heading-color: #282938;
   --bg-shades:#f5fcff;
+  --darkblue:#1c1e53
   --black:#000000;
   --white: #ffffff;
 
@@ -69,8 +70,8 @@ p{
 }
 
 .btn-primary:hover {
-  color:var(--white);
-  background-color:var(--primary); 
+  color:var(--primary);
+  background-color:var(--white); 
 }
 
 /*Global CSS ends*/
@@ -85,4 +86,39 @@ h3 {
   font-size: 36px;
   font-weight: 500;
   line-height: 67px;
+}
+/* End Headings*/
+
+/*Navbar Style start*/
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 85.333px;
+  background: var(--white);
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed position to stick the navigation bar at the top of the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar--items > ul{
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 42.667px;
+  text-decoration: none;
+}
+.navbar--items ul> li> a {
+  text-decoration: none;
+}
+
+/* Navbar Content */
+.navbar--content {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
 }
