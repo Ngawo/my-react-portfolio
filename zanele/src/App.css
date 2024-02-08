@@ -72,3 +72,17 @@ p{
   color:var(--white);
   background-color:var(--primary); 
 }
+
+/*Global CSS ends*/
+
+/*Headings*/
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height:67px;
+}
+h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 67px;
+}
