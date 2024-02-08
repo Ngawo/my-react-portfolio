@@ -7,14 +7,12 @@ import Home from './Pages/Home/Homescreen';
 function App() {
   return (
     <div className="App">
-      <Router>
         <div>
           <NavBar />
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </Router>
     </div>
   );
 }
