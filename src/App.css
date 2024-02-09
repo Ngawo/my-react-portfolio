@@ -62,7 +62,8 @@ p{
   color:var(--white);
   background-color:var(--primary); 
   
-} */
+} 
+*/
 .btn-primary{
   color: var(--white);
   background-color:var(--primary) ;
@@ -76,6 +77,40 @@ p{
 
 /*Global CSS ends*/
 
+/*Sectin Tittles*/
+/*About, Projects, Contact*/
+.section-title{
+  color:var(--heading-color);
+  font-size: 21px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex-start;
+}
+/*Hero Section*/
+.hero-section{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 133.333px 85.333px 133.333px;
+align-items: center;
+justify-content: space-between;
+gap: 32px;
+background-color: var(--bg-shades);
+}
+.hero-section-content-box{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+}
+.hero-section-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+  }
+  
 /*Headings*/
 h1 {
   font-size: 40px;
@@ -122,3 +157,7 @@ h3 {
   line-height: 24px;
   cursor: pointer;
 }
+.navbar--active-content{
+  color: var(--primary);
+}
+/*Navbar style end*/
