@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 import { Link } from "react-scroll";
 
 function NavBar() {
@@ -48,28 +48,29 @@ function NavBar() {
                 <ul>
                     <li>
                         {/* Use the Link component instead of link */}
-                        <Link onClick={closeMenu} activeClass="navBar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="heroSection" className="navbar--content">
+                        <Link onClick={closeMenu} activeClass="navbar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="heroSection" className="navbar--content">
                             Home
                         </Link>
                     </li>
                     <li>
                         {/* Use the Link component instead of link */}
-                        <Link onClick={closeMenu} activeClass="navBar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="AboutMe" className="navbar--content">
+                        <Link onClick={closeMenu} activeClass="navbar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="AboutMe" className="navbar--content">
                             About
                         </Link>
                     </li>
                     <li>
                         {/* Use the Link component instead of link */}
-                        <Link onClick={closeMenu} activeClass="navBar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="Projects" className="navbar--content">
+                        <Link onClick={closeMenu} activeClass="navbar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="Projects" className="navbar--content">
                             Projects
                         </Link>
                     </li>
                     <li>
                         {/* Use the Link component instead of link */}
-                        <Link onClick={closeMenu} activeClass="navBar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="ContactMe" className="navbar--content">
+                        <Link onClick={closeMenu} activeClass="navbar--active-content" spy={true} smooth={true} offset={-70} duration={500} to="ContactMe" className="navbar--content">
                             Contact
                         </Link>
                     </li>
+                    <button className="btn btn-outline-primary">Contact Me</button>
                 </ul>
             </div>
         </nav>

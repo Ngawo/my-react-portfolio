@@ -51,7 +51,7 @@ p{
   -o-transition: background-color 0.5s;
 }
 
-/* .btn-outline-primary{
+.btn-outline-primary{
   color: var(--primary);
   background-color: var(--white);
   border: 1px solid var(--primary);
@@ -63,7 +63,7 @@ p{
   background-color:var(--primary); 
   
 } 
-*/
+
 .btn-primary{
   color: var(--white);
   background-color:var(--primary) ;
@@ -76,6 +76,49 @@ p{
 }
 
 /*Global CSS ends*/
+/*Headings*/
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height:67px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height:58px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+/* End Headings*/
+
+/* paragraph text large, medium, small */
+/*Body 1*/
+.text-lg {
+  color: var(--darkblue);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+/*Body 2*/
+.text-md {
+  color: var(--darkblue);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/*Body 3*/
+.text-sm {
+  color: var(--black);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
 
 /*Sectin Tittles*/
 /*About, Projects, Contact*/
@@ -88,42 +131,7 @@ p{
   line-height: 32px;
   display: flex-start;
 }
-/*Hero Section*/
-.hero-section{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-padding: 133.333px 85.333px 133.333px;
-align-items: center;
-justify-content: space-between;
-gap: 32px;
-background-color: var(--bg-shades);
-}
-.hero-section-content-box{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-}
-.hero-section-content{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.333px;
-  }
-  
-/*Headings*/
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height:67px;
-}
-h3 {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 67px;
-}
-/* End Headings*/
-
+/*Section Titles End*/
 /*Navbar Style start*/
 .navBar {
   display: flex;
@@ -161,3 +169,56 @@ h3 {
   color: var(--primary);
 }
 /*Navbar style end*/
+
+/*Hero Section*/
+.hero--section{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 133.333px 85.333px 133.333px;
+align-items: center;
+justify-content: space-between;
+gap: 32px;
+background-color: var(--bg-shades);
+}
+.hero--section--content-box{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+}
+.hero--section--content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 21.333px;
+}
+.hero--section--content--box > button{
+    margin-top: 21.333px;
+}
+.hero--section--title{
+     color: var(--heading-color);
+     font-size: 74.667px;
+     font-weight: 700;
+     line-height: 90px;
+     align-self: stretch;
+     }
+.hero--section--title--color {
+  color: var(--primary);
+}
+.hero--section-description{
+  color: var(--darkblue);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.hero--section--img > img {
+  width:100% ;
+  height: 100%;
+}
+/*Hero Section Style End*/
+
+
+
+  
+
+
