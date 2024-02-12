@@ -218,14 +218,19 @@ gap: 32px;
 /*Hero Section Style End*/
 
 /*About Me */
-.about--section{
+.about--section {
   display: grid;
   padding: 133.3px 45.3px;
   align-items: center;
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
-
 }
+
+.about--section--img {
+  width: 100%;
+  width: 100%; 
+}
+
 /*About Me Style End*/
 
   
