@@ -3,6 +3,7 @@ import HeroSection from "../HeroSection";
 import AboutMe from "../AboutMe";
 import Projects from "../Projects";
 import ContactMe from "../ContactMe";
+import Footer from "../Footer";
 // import aboutImage from '../../../assets/images/zan.jpg';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <ContactMe />
+        <Footer />
         </>
     )
 
