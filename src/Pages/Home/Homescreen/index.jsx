@@ -1,6 +1,8 @@
 import React from "react";
 import HeroSection from "../HeroSection";
 import AboutMe from "../AboutMe";
+import Projects from "../Projects";
+import ContactMe from "../ContactMe";
 // import aboutImage from '../../../assets/images/zan.jpg';
 
 export default function Home() {
@@ -10,7 +12,8 @@ export default function Home() {
         <>
         <HeroSection />
         <AboutMe />
-        {/* <Projects /> */}
+        <Projects />
+        <ContactMe />
         </>
     )
 

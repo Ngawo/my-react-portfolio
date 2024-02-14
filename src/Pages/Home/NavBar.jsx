@@ -70,7 +70,6 @@ function NavBar() {
                             Contact
                         </Link>
                     </li>
-                    <button className="btn btn-outline-primary">Contact Me</button>
                 </ul>
             </div>
         </nav>
