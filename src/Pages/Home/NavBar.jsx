@@ -35,11 +35,9 @@ function NavBar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
-                {/* Make sure the path to your image file is correct */}
                 <img src="./img/logo.svg" alt="Zanele" />
             </div>
             <a className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav__hamburger__line"></span>
                 <span className="nav__hamburger__line"></span>
                 <span className="nav__hamburger__line"></span>
                 <span className="nav__hamburger__line"></span>

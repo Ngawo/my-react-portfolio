@@ -6,6 +6,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
+  background-color: #B4EAE7;
 }
 
 h1,
@@ -133,26 +134,26 @@ h3 {
 }
 /*Section Titles End*/
 /*Navbar Style start*/
-.navBar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 85.333px;
   background: var(--white);
   box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
-  position: fixed; /* Fixed position to stick the navigation bar at the top of the viewport */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
-.navbar--items > ul{
+.navbar--items > ul {
   list-style: none;
   display: flex;
   align-items: flex-start;
   gap: 42.667px;
   text-decoration: none;
 }
-.navbar--items ul> li> a {
+.navbar--items ul > li > a {
   text-decoration: none;
 }
 
@@ -270,6 +271,12 @@ h3 {
 }
 /*About Me Style End*/
 
+/* SlideShow.css */
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure that images maintain their aspect ratio and fill the container */
+}
 /* Contact Me */
 .contact--section {
   display: grid;

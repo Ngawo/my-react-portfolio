@@ -11,7 +11,7 @@ export default function Footer() {
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Your Company</p>
+        <p>&copy; Copyrights 2024. All Rights Reserved Designed by Zanele Mangqangwana.</p>
       </div>
     </footer>
   );
