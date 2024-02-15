@@ -327,6 +327,22 @@ h3 {
 
 /*Contact Me Style End*/
 
+/* Back To Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+
 /* Footer Starts */
 .footer-container {
   background-color: #333; /* Set your desired background color here */
