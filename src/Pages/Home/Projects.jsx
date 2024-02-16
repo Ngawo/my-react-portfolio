@@ -4,8 +4,8 @@ import ProjectSlider from './projectSlider'; // Import the Slider component from
 const ProjectSection = () => {
   return (
     <div>
-      <h2>My Projects</h2>
-      <ProjectSlider /> {/* Render the Slider component */}
+    <h2 className='myProject--heading underline'>Projects</h2>
+      <ProjectSlider />
     </div>
   );
 };

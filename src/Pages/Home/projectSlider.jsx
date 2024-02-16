@@ -2,23 +2,21 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+// import './ProjectSlider.css'; // Import custom CSS file for styling
 
-import image1 from "../../assets/images/zan.jpg"
-import image2 from "../../assets/images/mobileApp.jpg"
-import image3 from "../../assets/images/zan zan.jpg"
-import image4 from "../../assets/images/230x0w.webp"
+import image1 from "../../assets/images/Thee Beest.jpg"
+import image2 from "../../assets/images/Picture2.jpg"
+import image3 from "../../assets/images/picture3.png"
+import image4 from "../../assets/images/picture4.png"
 
 const ProjectSlider = () => {
-  // Sample project data
   const projects = [
-    { id: 1, title: 'Thee Best Construction Website', imageUrl: image1 },
-    { id: 2, title: 'Bank App', imageUrl: image2 },
-    { id: 3, title: 'Financial Calculator', imageUrl: image3 },
-    { id: 4, title: 'Chat App', imageUrl: image4 },
-    // Add more project data as needed
+    { id: 1, title: 'Thee Best Construction Website', imageUrl: image1, description: 'Description for Thee Best Construction Website' },
+    { id: 2, title: 'Bank App', imageUrl: image2, description: 'Description for Bank App' },
+    { id: 3, title: 'Financial Calculator', imageUrl: image3, description: 'Description for Financial Calculator' },
+    { id: 4, title: 'Chat App', imageUrl: image4, description: 'Description for Chat App' },
   ];
 
-  // Slider settings
   const settings = {
     dots: true,
     infinite: true,
@@ -27,19 +25,29 @@ const ProjectSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true, // Enable center mode
+    centerPadding: '20%', // Adjust the padding as needed
+    focusOnSelect: true // Ensure focus on the selected slide
   };
 
   return (
-    <div>
+    <div className="project-slider-container">
       <Slider {...settings}>
         {projects.map((project) => (
-          <div key={project.id}>
-            <h3>{project.title}</h3>
-            <img src={project.imageUrl} alt={project.title} />
+          <div key={project.id} className="project-slide">
+            <div className="image-container">
+              <img src={project.imageUrl} alt={project.title} />
+              <div className="project-details">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>
     </div>
   );
 };
+
 export default ProjectSlider;
+
