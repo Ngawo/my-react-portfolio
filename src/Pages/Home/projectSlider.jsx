@@ -25,11 +25,21 @@ const ProjectSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true, // Enable center mode
-    centerPadding: '20%', // Adjust the padding as needed
-    focusOnSelect: true // Ensure focus on the selected slide
+    centerMode: true,
+    centerPadding: '20%',
+    focusOnSelect: true,
+    beforeChange: (current, next) => {
+      const allSlides = document.querySelectorAll('.slick-slide');
+      allSlides.forEach((slide, index) => {
+        if (index !== next) {
+          slide.style.filter = 'blur(8px)'; // Apply blur effect
+        } else {
+          slide.style.filter = 'none'; // Remove blur effect
+        }
+      });
+    }
   };
-
+  
   return (
     <div className="project-slider-container">
       <Slider {...settings}>
@@ -50,4 +60,3 @@ const ProjectSlider = () => {
 };
 
 export default ProjectSlider;
-

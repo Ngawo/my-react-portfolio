@@ -304,9 +304,8 @@ h3 {
 
 /*About Me Style End*/
 
-/* SlideShow.css */
-.project-slider-container {
-  max-width: 800px; /* Adjust the max-width as needed */
+/* SlideShow.css */.project-slider-container {
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -314,13 +313,9 @@ h3 {
   position: relative;
 }
 
-.project-slide img {
-  width: 400px; /* Set the width to your desired size */
-  height: 250px; /* Set the height to your desired size */
-  object-fit: cover; /* Ensure the entire image is visible within the specified dimensions */
-  border-radius: 8px; /* Add border-radius for rounded corners */
+.image-container {
+  position: relative;
 }
-
 
 .project-details {
   position: absolute;
@@ -332,10 +327,28 @@ h3 {
 }
 
 .project-details h3 {
-  color: #ffffff; /* Text color */
+  color: #ffffff;
   margin: 0;
 }
 
+.project-details p {
+  color: #ffffff;
+  margin: 0;
+}
+
+.slick-slide {
+  transition: filter 0.5s ease-in-out;
+}
+
+.slick-slide:not(.slick-center) {
+  filter: blur(8px);
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
 /* Contact Me */
 .contact--section {
