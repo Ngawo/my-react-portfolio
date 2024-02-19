@@ -1,8 +1,11 @@
 // NavBar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAdjust } from '@fortawesome/free-solid-svg-icons';
 
-function NavBar() {
+
+function NavBar({ onThemeChange }) {
     const [navActive, setNavActive] = useState(false);
 
     const toggleNav = () => {
@@ -11,6 +14,11 @@ function NavBar() {
 
     const closeMenu = () => {
         setNavActive(false);
+    }
+
+    const handleThemeChange = () => {
+    
+        onThemeChange();
     }
 
     return (
@@ -45,6 +53,12 @@ function NavBar() {
                             Contact
                         </Link>
                     </li>
+                    <li>
+                    <button onClick={handleThemeChange} className="theme-button">
+                        <FontAwesomeIcon icon={faAdjust} />
+                        </button>
+                    </li>
+
                 </ul>
             </div>
         </nav>

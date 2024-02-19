@@ -20,7 +20,7 @@ export default function AboutMe() {
       </div>
       <div className='hero--section--content--box about--section--section--box'>
         <div className='hero--section--content'>
-          <h2 className='skills-section--heading underline'>About Me</h2>
+          <h1 className='skills-section--heading underline'>About Me</h1>
           <p className='hero--section-description'>
             I'm Zanele Mangqangwana, a Junior Software Developer located in Cape Town.
             I hold a National Diploma in Information Technology with a focus on Communication
