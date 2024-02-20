@@ -267,15 +267,51 @@ body {
   gap: 50px; 
   grid-template-columns: repeat(2, 1fr);
 }
+.about--section--content--box {
+  display: flex;
+  flex-direction: row;
+}
+
+.about--section--info {
+  flex: 1;
+}
 
 .about--section--img {
-  width: 100%;
+  width: 50rem;
+  height: 100%;
 }
 .about--section--img img {
   max-width: 50%; 
   height: auto;
+  flex: 1;
+  margin-bottom: 10px; 
 }
-.skill-group {
+.about--section--content {
+  display: flex;
+}
+
+.about--section--img {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.about--section--rectangle {
+  width: 40rem; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #FFD700; /* Bright yellow as an example, change to desired color */
+  
+}
+
+/* .about--section--info {
+  flex: 2;
+} */
+
+/* .hero--section-description {
+  font-size: 18px; /* Adjust the font size as needed */
+  /* line-height: 1.5;
+  margin-top: 10px
+} */ */
+
+/* .skill-group {
   width: 300px;
   height: 200px;
   margin: 0.5rem;
@@ -304,7 +340,7 @@ body {
   right: .65rem;
   top: -.6rem;
 }
-
+ */
 
 /*About Me Style End*/
 
@@ -364,53 +400,40 @@ body {
   padding: 50px 85px; 
   gap: 40px;
 }
-.map{
-  width: 30rem;
-  position: relative;
-  bottom: 5rem;
-  right: 10rem;
-}
 .map-route {
   width: 20%;
 }
-.iframe{
-  margin-left: -20rem;
- margin-bottom: -30rem;
-}
-
-.contact-info{
-  display: block;
-  /* justify-content: center;
-  align-items: center; */
-  gap: 2rem;
+.map-container{
+  position: relative;
+  margin-right: -25rem;
+  margin-top: 7rem;
+  
 }
 
 .form-wrapper {
   position: relative;
   margin-right: 30rem;
-  background-color: #f5f5f5; /* Background color of the rectangle */
-  border: 1px solid #ccc; /* Border color */
-  border-radius: 10px; /* Border radius */
+  background-color: #f5f5f5; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
   padding: 1rem;
-  width: 40rem; 
-  
+  width: 40rem;
+  left: 30rem;
 }
-
-/* .contact--form--container {
+.contact--form--container {
   display: grid;
   width: 50%;
+  height: 50%;
   grid-template-columns: 1fr; 
   row-gap: 32px;
 }
- */
+.contact--label{
+  height: 5rem;
+}
 
-/* .container {
-  display: flex;
-  grid-template-columns: repeat(2, auto);
-  column-gap: 32px;
-  row-gap: 32px;
-} */
-
+.container {
+ width: 38rem;
+} 
 .contact--input {
   width: 100%;
   padding: 12px;
@@ -421,6 +444,10 @@ body {
   position: relative;
   width: 5rem;
   left: 12rem;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
 }
 
 /*Contact Me Style End*/
@@ -440,7 +467,10 @@ body {
   transition: background-color 0.3s ease;
 }
 
-
+.dark-theme {
+  background-color: blue;
+  color: white; /* Adjust text color as needed */
+}
 /* Footer Starts */
 .footer-container {
   background-color:#47817f; /* Set your desired background color here */

@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 // import './ProjectSlider.css'; // Import custom CSS file for styling
 
-import image1 from "../../assets/images/Thee Beest.jpg"
+import image1 from "../../assets/images/picture1.jpg"
 import image2 from "../../assets/images/Picture2.jpg"
 import image3 from "../../assets/images/picture3.png"
 import image4 from "../../assets/images/picture4.png"

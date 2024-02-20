@@ -17,8 +17,7 @@ function NavBar({ onThemeChange }) {
     }
 
     const handleThemeChange = () => {
-    
-        onThemeChange();
+        document.body.classList.toggle("dark-theme");
     }
 
     return (
@@ -54,11 +53,10 @@ function NavBar({ onThemeChange }) {
                         </Link>
                     </li>
                     <li>
-                    <button onClick={handleThemeChange} className="theme-button">
-                        <FontAwesomeIcon icon={faAdjust} />
+                        <button onClick={handleThemeChange} className="theme-button" id="theme">
+                            <FontAwesomeIcon icon={faAdjust} />
                         </button>
                     </li>
-
                 </ul>
             </div>
         </nav>
