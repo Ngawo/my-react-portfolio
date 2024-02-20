@@ -39,11 +39,11 @@ export default function AboutMe() {
             <SkillBar skill="HTML" percentage={80} />
             <SkillBar skill="CSS" percentage={75} />
             </div>
-            <div className="skill-group">
+            <div className="skills-group">
             <SkillBar skill="JavaScript" percentage={70} />
             <SkillBar skill="Python" percentage={70} />
           </div>
-          <div className="skill-group">
+          <div className="skillz-group">
             <SkillBar skill="Java" percentage={70} />
             <SkillBar skill="React" percentage={40} />
           </div>

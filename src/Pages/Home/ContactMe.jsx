@@ -15,8 +15,8 @@ export default function ContactForm() {
   return (
     <section id="contactSection" className="contact--section">
         <h1 className="contact--heading underline">Contact Me</h1>
+        <div className="contact_info">
         <div className="contact-details">
-        <div className="contact-info">
           <div className="phone">
             <FaPhone />
             <span>+7781512665</span>
