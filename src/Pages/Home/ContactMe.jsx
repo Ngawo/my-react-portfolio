@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Form } from "react-bootstrap";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function ContactForm() {
+  const recaptchaRef = useRef();
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const token = await recaptchaRef.current.executeAsync();
+    // You can now send the form data along with the reCAPTCHA token to your backend for validation
+    console.log("Form submitted with reCAPTCHA token:", token);
+  };
+
   return (
-    <section className="contact--section">
-        <h2 className="contact--heading underline">Contact Me</h2>
+    <section id="contactSection" className="contact--section">
+        <h1 className="contact--heading underline">Contact Me</h1>
         <div className="contact-details">
         <div className="contact-info">
           <div className="phone">
@@ -31,7 +40,7 @@ export default function ContactForm() {
           ></iframe>
         </div>
         <div className="form-wrapper">
-          <Form className="contact--form--container">
+          <Form className="contact--form--container" onSubmit={handleSubmit}>
             <div className="container">
               <label htmlFor="first-name" className="contact--label">
                 <span className="text-rd">Your Name</span>
@@ -46,7 +55,10 @@ export default function ContactForm() {
                 <textarea className="contact--input text-rd" id="message" name="message" rows="8" placeholder="Type your message..." />
               </label>
               <div>
-                <button type="submit" className="btn btn-primary contact--form--btn">Submit</button>
+              <div style={{ display: 'block' }}>
+                <button ref={recaptchaRef} data-sitekey="6LdusngpAAAAAHwBm4iPPEOzxlhNkszDRjoOwJMw" data-callback="onSubmit" />
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
               </div>
             </div>
           </Form>
