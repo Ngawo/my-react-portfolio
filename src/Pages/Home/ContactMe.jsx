@@ -1,21 +1,34 @@
 import React, { useRef } from "react";
 import { Form } from "react-bootstrap";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
 
 export default function ContactForm() {
-  const recaptchaRef = useRef();
+  const recaptchaRef = useRef(null);
+  const onChange= () =>{
 
+  }
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const token = await recaptchaRef.current.executeAsync();
-    // You can now send the form data along with the reCAPTCHA token to your backend for validation
-    console.log("Form submitted with reCAPTCHA token:", token);
+    
+
+    // Send email using emailjs
+    emailjs.sendForm("service_xp7k5on", "template_ia0yz3w", event.target, "OkDz7aA-TsfOrtNE5")
+      .then((result) => {
+        console.log("Email sent successfully:", result.text);
+        // Optionally, you can reset the form after successful submission
+        event.target.reset();
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+      });
   };
 
   return (
     <section id="contactSection" className="contact--section">
-        <h1 className="contact--heading underline">Contact Me</h1>
-        <div className="contact_info">
+      <h1 className="contact--heading underline">Contact Me</h1>
+      <div className="contact_info">
         <div className="contact-details">
           <div className="phone">
             <FaPhone />
@@ -26,7 +39,7 @@ export default function ContactForm() {
             <span>zanmangqangwana665@gmail.com</span>
           </div>
         </div>
-        </div>
+      </div>
       <div className="contact-container">
         <div className="map-container">
           <iframe
@@ -44,7 +57,7 @@ export default function ContactForm() {
             <div className="container">
               <label htmlFor="first-name" className="contact--label">
                 <span className="text-rd">Your Name</span>
-                <input type="text" className="contact--input text-md" name="first-name" id="first-name" required />
+                <input type="text" className="contact--input text-md" name="first_name" id="first-name" required />
               </label>
               <label htmlFor="email" className="contact--label">
                 <span className="text-rd">Email</span>
@@ -55,10 +68,14 @@ export default function ContactForm() {
                 <textarea className="contact--input text-rd" id="message" name="message" rows="8" placeholder="Type your message..." />
               </label>
               <div>
-              <div style={{ display: 'block' }}>
-                <button ref={recaptchaRef} data-sitekey="6LdusngpAAAAAHwBm4iPPEOzxlhNkszDRjoOwJMw" data-callback="onSubmit" />
+                <div className="recaptcha-container">
+                  <ReCAPTCHA
+                    sitekey="6LdusngpAAAAAHwBm4iPPEOzxlhNkszDRjoOwJMw"
+                    ref={recaptchaRef}
+                    onChange={onChange}
+                  />
+                  <button type="submit" className="btn btn-primary">Submit</button>
                 </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
               </div>
             </div>
           </Form>

@@ -1,12 +1,10 @@
-// NavBar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAdjust } from '@fortawesome/free-solid-svg-icons';
+import ThemeButton from "./ThemeButton"; // Import the ThemeButton component
 
-
-function NavBar({ onThemeChange }) {
+function NavBar() {
     const [navActive, setNavActive] = useState(false);
+    const [theme, setTheme] = useState("light");
 
     const toggleNav = () => {
         setNavActive(!navActive);
@@ -17,11 +15,12 @@ function NavBar({ onThemeChange }) {
     }
 
     const handleThemeChange = () => {
-        document.body.classList.toggle("dark-theme");
+        const newTheme = theme === "light" ? "dark" : "light";
+        setTheme(newTheme);
     }
 
     return (
-        <nav className={`navbar ${navActive ? "active" : ""}`}>
+        <nav className={`navbar ${navActive ? "active" : ""} ${theme === "dark" ? "dark-theme" : ""}`}>
             <div>
                 <img src="./img/logo.svg" alt="Zanele" />
             </div>
@@ -53,9 +52,7 @@ function NavBar({ onThemeChange }) {
                         </Link>
                     </li>
                     <li>
-                        <button onClick={handleThemeChange} className="theme-button" id="theme">
-                            <FontAwesomeIcon icon={faAdjust} />
-                        </button>
+                        <ThemeButton />
                     </li>
                 </ul>
             </div>
@@ -64,3 +61,4 @@ function NavBar({ onThemeChange }) {
 }
 
 export default NavBar;
+
