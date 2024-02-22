@@ -59,6 +59,10 @@ export default function ContactForm() {
                 <span className="text-rd">Your Name</span>
                 <input type="text" className="contact--input text-md" name="first_name" id="first-name" required />
               </label>
+              <label htmlFor="Subject" className="contact--label">
+                <span className="text-rd">Subject</span>
+                <input type="text" className="contact--input text-md" name="subject" id="subject" required />
+              </label>
               <label htmlFor="email" className="contact--label">
                 <span className="text-rd">Email</span>
                 <input type="email" className="contact--input text-md" name="email" id="email" required />

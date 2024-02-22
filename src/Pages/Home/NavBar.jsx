@@ -52,6 +52,7 @@ function NavBar() {
                         </Link>
                     </li>
                     <li>
+
                         <ThemeButton />
                     </li>
                 </ul>

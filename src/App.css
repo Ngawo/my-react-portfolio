@@ -1,23 +1,15 @@
 /*Global CSS*/
-
+* {
+ 
+}
 body{
   margin: 0;
   font-family: "Roboto", "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-style: normal;
- 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p{
-  margin: 0;
-}
 .underline{
   text-align: center;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -98,9 +90,7 @@ h3 {
   right: 0;
   z-index: 999;
   background: linear-gradient(#b0e633, #53ef7d) /* Adjusted gradient */
-  
 }
-
 .navbar--items > ul {
   list-style: none;
   display: flex;
@@ -108,13 +98,10 @@ h3 {
   gap: 42.667px;
   text-decoration: none;
 }
-
 .navbar--items ul > li > a {
   text-decoration: none;
   color: black; /* Text color */
 }
-
-/* Navbar Content */
 .navbar--content {
   font-size: 16px;
   font-style: normal;
@@ -122,7 +109,6 @@ h3 {
   line-height: 24px;
   cursor: pointer;
 }
-
 .theme-button {
   background-color: #B4EAE7;
   color: black; /* Button text color */
@@ -201,23 +187,17 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
-
 .theme-button:hover {
   background-color: hsl(240, 3%, 93%); 
 }
 /*Navbar style end*/
-
 .hero--section {
   display: flex;
   padding: 133.333px 85.333px 133.333px;
   justify-content: center;
   height: 100%;
   gap: 32px;
-  
- 
 }
-
 .hero--section--content {
   display: flex;
   flex-direction: column;
@@ -225,13 +205,11 @@ body {
   gap: 21.333px;
   margin-top: 50px;
 }
-
 .hero--section--buttons {
   display: flex;
   gap: 16px;
   margin-top: 20px;
 }
-
 .hero--section--title {
   color: var(--heading-color);
   font-size: 74.667px;
@@ -265,11 +243,11 @@ body {
   height: auto; 
 }
 .about--section--img img {
-  width: 30rem;
-  height: auto; 
-  border-radius: 15px;
-  margin-bottom: -5rem; 
-  margin-left: 75px;
+  width: 25rem;
+  height: 100%; 
+  /* border-radius: 15px; */
+  margin-bottom: -7rem; 
+  margin-left: 7px;
 }
 .abaut--content{
   margin-left: -10rem;
@@ -277,12 +255,13 @@ body {
 .about--section--rectangle {
   flex: 1 1 auto;
   background-color: #8fa19f; 
-  width: 500px;
-  padding: 20px; 
+  width: 600px;
+  height: 10rem;
+  margin-left: 7px;
   animation: slideInFromRight 1s ease forwards; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 10px); 
-  margin-right: 250px;
+  margin-top: 7rem;
   
 }
 
@@ -304,6 +283,7 @@ body {
 .skill--group-section{ 
   justify-content: center;
   margin-bottom: 10px; 
+  margin: 5px;
   gap: 3rem;
 }
 .skill-group{
@@ -335,15 +315,16 @@ body {
 
 /* Projects  */
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Adjust alignment as needed */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  padding: 6rem;
+  gap: 6rem 6rem; /* Adjust alignment as needed */
 }
 
 .flip-card {
   perspective: 1000px;
-  width: calc(50% - 20px); /* Adjust the width of each card container */
-  margin-bottom: 20px; /* Adjust spacing between rows */
+  width: calc(50% - 10px); 
+  margin-bottom: 10px; 
 }
 
 .flip-card-inner {
@@ -360,7 +341,7 @@ body {
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  width: 100%;
+  width: 150%;
   height: 100%;
   backface-visibility: hidden;
 }
@@ -393,12 +374,15 @@ body {
   padding: 50px 85px; 
   gap: 40px;
 }
+
+
+
 .map-route {
   width: 20%;
 }
 .map-container{
   position: relative;
-  margin-right: -25rem;
+  margin-right: -20rem;
   margin-top: 7rem;
   
 }
@@ -412,6 +396,10 @@ body {
   padding: 1rem;
   width: 40rem;
   left: 30rem;
+}
+.contact_info{
+  margin-left: -45rem;
+  margin-top: 4rem;
 }
 .contact--form--container {
   display: grid;
@@ -556,11 +544,9 @@ body {
   .hero--section--content--box {
     align-items: center;
   }
-  .portfolio--container-box {
-    gap: 30px;
+  
   }
   .skills--section,
-  .testimonial--section,
   .contact--section,
   .footer--container {
     gap: 20px;
@@ -603,8 +589,7 @@ body {
 } */
 
 /* Hamburger menu  */
-
-/* .nav__hamburger {
+.nav__hamburger {
   display: none;
   width: 1.875rem;
   height: 1.313rem;
@@ -614,7 +599,6 @@ body {
   top: 25px;
   right: 25px;
 }
-
 .nav__hamburger__line {
   display: block;
   height: 0.188rem;
@@ -623,7 +607,6 @@ body {
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
-
 @media screen and (max-width: 1200px) {
   .nav__hamburger {
     display: flex;
@@ -673,6 +656,6 @@ body {
   .nav__hamburger.active :nth-child(3) {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
-} */
+}
 
 /* Responsive Screens Ends*/

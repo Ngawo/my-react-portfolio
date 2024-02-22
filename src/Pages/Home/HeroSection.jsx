@@ -1,4 +1,5 @@
 import React from 'react';
+import './HeroSection.css';
 
 function scrollToContactSection() {
   const contactSection = document.getElementById('contactSection');
