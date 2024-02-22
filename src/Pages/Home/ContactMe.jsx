@@ -29,7 +29,8 @@ export default function ContactForm() {
     <section id="contactSection" className="contact--section">
       <h1 className="contact--heading underline">Contact Me</h1>
       <div className="contact_info">
-        <div className="contact-details">
+      <div className="contact-container">
+          <div className="contact-details">
           <div className="phone">
             <FaPhone />
             <span>+7781512665</span>
@@ -39,8 +40,7 @@ export default function ContactForm() {
             <span>zanmangqangwana665@gmail.com</span>
           </div>
         </div>
-      </div>
-      <div className="contact-container">
+      
         <div className="map-container">
           <iframe
             title="Cape Town Map"
@@ -52,6 +52,8 @@ export default function ContactForm() {
             loading="lazy"
           ></iframe>
         </div>
+        </div>
+        
         <div className="form-wrapper">
           <Form className="contact--form--container" onSubmit={handleSubmit}>
             <div className="container">
