@@ -24,7 +24,6 @@ export default function ContactForm() {
         console.error("Failed to send email:", error);
       });
   };
-
   return (
     <section id="contactSection" className="contact--section">
       <h1 className="contact--heading underline">Contact Me</h1>
