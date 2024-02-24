@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../../assets/images/zan.jpg';
 
+
 function SkillBar({ skill, percentage }) {
   return (
     <div className="skill-bar">

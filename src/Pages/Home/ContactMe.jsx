@@ -13,11 +13,9 @@ export default function ContactForm() {
     event.preventDefault();
     
 
-    // Send email using emailjs
     emailjs.sendForm("service_xp7k5on", "template_ia0yz3w", event.target, "OkDz7aA-TsfOrtNE5")
       .then((result) => {
         console.log("Email sent successfully:", result.text);
-        // Optionally, you can reset the form after successful submission
         event.target.reset();
       })
       .catch((error) => {

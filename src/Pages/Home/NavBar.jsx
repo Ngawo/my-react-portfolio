@@ -22,7 +22,7 @@ function NavBar() {
     return (
         <nav className={`navbar ${navActive ? "active" : ""} ${theme === "dark" ? "dark-theme" : ""}`}>
             <div>
-                <img src="./img/logo.svg" alt="Zanele" />
+                <div className="nav-logo"><span>Z.M</span></div>
             </div>
             <a className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
                 <span className="nav__hamburger__line"></span>

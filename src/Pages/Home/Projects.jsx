@@ -10,36 +10,37 @@ const cardData = [
   {
     id: 1, 
     heading: 'Construction Website',
-    description: 'This is Thee Best Group Construction Website, we developed it HTML, CSS, and JavaScript.',
+    description: 'This is Thee Best Group Construction Website, we developed it HTML, CSS, and JavaScript. We designed this website to be visually appealing, user friendly and made it responsive',
     imageUrl: image1,
-    link: 'https://example.com'
+    link: 'https://thebestconstruction.netlify.app/#'
   },
   {
     id: 2,
     heading: 'Bank App',
-    description: 'This is our Python-based Bank App designed for streamlined banking processes.',
+    description: 'This is our Python-based Bank App designed for streamlined banking processes.Our Bank App allows you to create New Account, Login to your account and Perfom',
     imageUrl: image2,
-    link: 'https://example.com'
+    link: 'https://github.com/Ngawo/Bank_App'
   },
   {
     id: 3,
     heading: 'Financial Calculator',
-    description: 'Description 3',
+    description: 'Users can input parameters such as initial investment amount, interest rate, and investment period for the Investment Calculator, or present value of the bond, interest rate, and bond term for the Bond Calculator. Upon submission, the calculators compute and display the respective results.',
     imageUrl: image3,
-    link: 'https://example.com'
+    link: 'https://github.com/Ngawo/financial_calculator'
   },
   {
     id: 4,
     heading: 'Chat App',
-    description: 'Description 4',
+    description: 'This is a real time chat we created using react, it allowed user to send and recieve a messgage',
     imageUrl: image4,
-    link: 'https://example.com'
+    link: 'https://theebestchat.netlify.app/'
   },
 ];
 
 function App() {
   return (
     <div className="card-container">
+      
       {cardData.map(card => (
         <CreditCard key={card.id} heading={card.heading} description={card.description} imageUrl={card.imageUrl} link={card.link} />
       ))}
