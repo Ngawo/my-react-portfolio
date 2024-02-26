@@ -81,8 +81,15 @@ body{
   line-height: 24px;
   cursor: pointer;
 }
+.theme_container{
+  width: 4rem;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
 .theme-button-container {
-  position: fixed;
+  /* position: fixed; */
   top: 10px;
   right: -400px;
 }
@@ -407,6 +414,57 @@ body {
 }
  /* End of projects */
 
+ /* Services Style Start */
+ .service-box {
+  background-color: whitesmoke;
+  padding: 2.5rem 1.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+h2{
+  align-items: center ;
+}
+
+.service-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #080808;
+  box-shadow: 0 0 0 10px #3883d8;
+  border-radius: 50%;
+}
+
+.service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.service-box .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.service-box .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+  color: #00DBDE;
+}
+
+.service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.service-box .s-description {
+  color: #4e4e4e;
+}
+
+
 /* Contact Me */
 .contact--section {
   display:grid;
@@ -475,8 +533,8 @@ color: white;
 
 @media screen and (max-width: 768px) {
   .form-wrapper {
-    width: 80%; /* Adjust width for smaller screens */
-    margin-right: 0; /* Remove margin-right */
+    width: 80%;
+    margin-right: 0;  
     height: 460px;
     left: 20px;
   }
@@ -488,11 +546,11 @@ color: white;
   }
   .contact-details,
   .map-container {
-    display: none; /* Hide contact details and map on smaller screens */
+    display: none; 
   }
 
   .contact--section {
-    padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    padding: 3rem 1rem; 
   }
   .recaptcha-container,
   .submit-btn {
@@ -505,21 +563,21 @@ color: white;
 
 /* Footer Starts */
 .footer-container {
-  color: #fff; /* Text color */
-  padding: 20px; /* Add padding as needed */
-  text-align: center; /* Center align text */
+  color: #fff; 
+  padding: 20px; 
+  text-align: center; 
   background-image: linear-gradient(#212121, #212121);
 }
 
 .social-icons a {
-  color: #e81cff; /* Icon color */
-  font-size: 20px; /* Adjust icon size */
-  margin: 0 10px; /* Add spacing between icons */
-  text-decoration: none; /* Remove default underline */
+  color: #e81cff;
+  font-size: 20px;
+  margin: 0 10px; 
+  text-decoration: none; 
 }
 
 .social-icons a:hover {
-  color: #00DBDE; /* Change icon color on hover */
+  color: #00DBDE;
 }
 
 .copyright {

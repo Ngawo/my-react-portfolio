@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import HeroSection from "../HeroSection";
 import AboutMe from "../AboutMe";
 import Projects from "../Projects";
+import Services from "../Services"
 import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import BackToTopButton from "../BackToTop";
@@ -21,6 +22,7 @@ export default function Home() {
             <AboutMe />
             <Projects />
             <ContactMe />
+            <Services />
             <BackToTopButton />
             <Footer />
         </div>

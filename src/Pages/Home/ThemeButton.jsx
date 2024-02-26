@@ -11,7 +11,7 @@ function ThemeButton() {
 
     return (
         <div className="theme-button-container">
-            <div className="container">
+            <div className="theme_container">
                 <input
                     type="checkbox"
                     className="checkbox"

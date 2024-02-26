@@ -51,11 +51,11 @@ function NavBar() {
                             Projects
                         </Link>
                     </li>
-                    {/* <li>
+                    <li>
                         <Link onClick={closeMenu} to="/Services" className="navbar--content">
                             Services
                         </Link>
-                    </li> */}
+                    </li>
                     <li>
                         <Link onClick={closeMenu} to="/ContactMe" className="navbar--content">
                             Contact
