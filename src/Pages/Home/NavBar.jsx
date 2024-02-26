@@ -1,3 +1,5 @@
+// NavBar.js
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ThemeButton from "./ThemeButton";
@@ -31,7 +33,7 @@ function NavBar() {
               <span className="nav__hamburger__line"></span>
               <span className="nav__hamburger__line"></span>
               <span className="nav__hamburger__line"></span>
-          </a>
+            </a>
             <div className={`navbar--items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
@@ -49,18 +51,17 @@ function NavBar() {
                             Projects
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link onClick={closeMenu} to="/Services" className="navbar--content">
                             Services
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link onClick={closeMenu} to="/ContactMe" className="navbar--content">
                             Contact
                         </Link>
                     </li>
                     <li>
-
                         <ThemeButton />
                     </li>
                 </ul>
@@ -70,4 +71,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
