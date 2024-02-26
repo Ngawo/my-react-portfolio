@@ -7,13 +7,6 @@ body{
   font-style: normal;
 }
 
-.underline{
-  text-align: center;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: larger;
-  text-decoration: underline;
-  
-}
 /* Global button style */
 .btn {
   display: inline-block;
@@ -44,52 +37,44 @@ body{
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  /* Align the section title to the start of the section */
   align-self: flex-start;
 }
 /*Section Titles End*/
 
 
-/*===========Navbar Style start==================*/
+/*Navbar Style start*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px; /* Adjust padding as needed */
-  /* box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(90deg, #e81cff 0%, #0b0c0c 100%);
   z-index: 1;
 }
-
 .navbar--items {
-  /* Remove margin-left: 650px; */
-  /* Adjust alignment and spacing for responsiveness */
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-left: 750px;
-
+  margin-left: 600px;
 }
-
 .navbar--items > ul {
   list-style: none;
   display: flex;
-  align-items: center; /* Change alignment to center */
-  gap: 68px; /* Adjust spacing between items */
-  margin: 0; /* Remove default margin */
+  align-items: center; 
+  gap: 40px; 
+  margin: 0; 
 }
-
 .navbar--items ul > li > a {
   text-decoration: none;
-  color: black;
   font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
 .navbar--content {
   font-size: 16px;
   font-style: normal;
@@ -97,41 +82,18 @@ body{
   line-height: 24px;
   cursor: pointer;
 }
-
 .theme-button-container {
   position: fixed;
   top: 10px;
   right: -400px;
 }
-
 .container {
   display: inline-block;
   position: relative;
 }
-
 .checkbox {
   display: none;
 }
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #212121;
-  border-radius: 34px;
-  transition: background-color 0.4s;
-}
-
 .switch .slider:before {
   position: absolute;
   content: '';
@@ -139,7 +101,7 @@ body{
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #333;
+  background-color: #e81cff;
   border-radius: 50%;
   transition: transform 0.4s;
 }
@@ -179,33 +141,40 @@ body {
   background-color: hsl(240, 3%, 93%); 
 }
 /*Navbar style end*/
+
+/* Hero Section  Style Start */
 .hero--section {
   display: flex;
   padding: 133.333px 85.333px 133.333px;
   justify-content: center;
   height: 80dvh;
   gap: 32px;
-  background-image: url(../src/assets/images/pexels-rostislav-uzunov-5011647.jpg);
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
-  
+  bottom: 10px;
+}
+.hero-image {
+  width: 20rem;
+  height: 100%; 
+  border-radius: 100%;
+  margin-bottom: 2rem;  
+}
+.hero--image{
+  margin-left: 200px;
 }
 .Typewriter-text{
-  color: #0b0c0c;
-  font-size: large;
+  color:#e81cff;
+  font-size: larger;
   font-weight: bolder;
-  
 }
 .hero--section--content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 21.333px;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .hero--section--buttons {
   display: flex;
-  gap: 16px;
+  gap: 50px;
   margin-top: 20px;
 }
 .hero--section--title {
@@ -560,7 +529,8 @@ color: white;
   outline: none;
   transition: background-color 0.3s ease;
 }
-/*Hamburger menu  */
+
+/*Harmburger Menu Style*/
 .nav__hamburger {
   display: none;
   width: 1.875rem;
@@ -571,6 +541,7 @@ color: white;
   top: 25px;
   right: 25px;
 }
+
 .nav__hamburger__line {
   display: block;
   height: 0.188rem;
@@ -579,7 +550,8 @@ color: white;
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
-@media screen and (max-width: 1220px) {
+
+@media screen and (max-width: 1200px) {
   .nav__hamburger {
     display: flex;
     z-index: 200;
@@ -592,7 +564,7 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(8, 8, 8);
+    background-color: rgba(255, 255, 255);
     top: -20rem;
     left: 0;
     width: 100%;
@@ -629,14 +601,6 @@ color: white;
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+/*Harmburger style end*/
 
-@media screen and (max-width: 768px) {
-  .nav__hamburger {
-    display: flex;
-    z-index: 200;
-  }
-  .navbar--items {
-    display: flex;
-  }
-}
-/* Responsive Screens Ends*/
+

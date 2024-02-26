@@ -24,11 +24,14 @@ function NavBar() {
             <div>
                 <div className="nav-logo"><span>Z.M</span></div>
             </div>
-            <a className={`nav__hamburger ${navActive ? "active" : ""}`} onClick={toggleNav}>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
-                <span className="nav__hamburger__line"></span>
-            </a>
+            <a
+               className={`nav__hamburger ${navActive ? "active" : ""}`}
+               onClick={toggleNav}
+            >
+              <span className="nav__hamburger__line"></span>
+              <span className="nav__hamburger__line"></span>
+              <span className="nav__hamburger__line"></span>
+          </a>
             <div className={`navbar--items ${navActive ? "active" : ""}`}>
                 <ul>
                     <li>
@@ -38,12 +41,17 @@ function NavBar() {
                     </li>
                     <li>
                         <Link onClick={closeMenu} to="/AboutMe" className="navbar--content">
-                            AboutMe
+                            About
                         </Link>
                     </li>
                     <li>
                         <Link onClick={closeMenu} to="/Projects" className="navbar--content">
                             Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={closeMenu} to="/Services" className="navbar--content">
+                            Services
                         </Link>
                     </li>
                     <li>
