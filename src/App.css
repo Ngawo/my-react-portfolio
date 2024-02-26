@@ -14,16 +14,18 @@ body{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
+  margin: 21px 5px;
   text-decoration: none;
-  border:#222;
+  border: #222;
   cursor: pointer;
   color: #fff;
   transition: background-color 0.3s ease;
-  background: linear-gradient(#212121, #212121) padding-box,
-  linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
   border: 5px solid transparent;
-  border-radius: 16px; 
+  border-radius: 16px;
+  width: 200px;
 }
+
 
 .btn:hover {
   background-color: #40c9ff;
@@ -143,65 +145,76 @@ body {
 /*Navbar style end*/
 
 /* Hero Section  Style Start */
-.hero--section {
+  .hero--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+
+.hero--section--content--box {
   display: flex;
-  padding: 133.333px 85.333px 133.333px;
-  justify-content: center;
-  height: 80dvh;
-  gap: 32px;
-  bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  padding: 0;
 }
-.hero-image {
-  width: 20rem;
-  height: 100%; 
-  border-radius: 100%;
-  margin-bottom: 2rem;  
+
+.hero--section--content {
+  text-align: center;
 }
-.hero--image{
-  margin-left: 200px;
+
+.hero--section--title-description {
+  font-size: 24px;
 }
-.Typewriter-text{
-  color:#e81cff;
+
+.Typewriter-text {
+  color: #e81cff;
   font-size: larger;
   font-weight: bolder;
 }
-.hero--section--content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21.333px;
-  margin-top: 150px;
-}
-.hero--section--buttons {
-  display: flex;
-  gap: 50px;
+
+.hero-image {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
   margin-top: 20px;
 }
-.hero--section--title {
-  color: var(--heading-color);
-  font-size: 200px;
-  font-weight: 700;
-  line-height: 90px;
-  align-self: stretch;
-}
+
 @media (max-width: 768px) {
   .hero--section {
-    padding: 80px 20px;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      padding: 133.333px 85.333px 133.333px;
+      height: 80vh;
   }
-
+  .hero--image {
+    flex: 1;
+    text-align: right;
+    margin-top: 0;
+}
   .hero--section--content--box {
-    gap: 20px;
+      flex: 1;
+      gap: 32px;
+      text-align: left;
   }
 
-  .hero--section--content .h2{
-    font-size: large;
+  .hero--section--title-description {
+      font-size: 36px;
   }
-  
-  .section--title {
-    font-size: 100px;
-    line-height: 48px;
+  .hero--section--buttons{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .btn{
+    width:155px;
   }
 }
+
+
 /* Hero Section Style End */
 
 /* About Me Section Style  */
@@ -550,7 +563,6 @@ color: white;
   border-radius: 0.625rem;
   transition: all ease-in-out 0.2s;
 }
-
 @media screen and (max-width: 1200px) {
   .nav__hamburger {
     display: flex;
@@ -558,33 +570,26 @@ color: white;
   }
   .navbar--items {
     display: flex;
-  }
-  .navbar--items {
     position: absolute;
-    display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
     top: -20rem;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
+    z-index: 1000; /* Adjusted z-index */
   }
   .navbar--items ul {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 3rem 0 0.6rem;
-    z-index: -100;
   }
   .navbar--items ul li {
     text-align: center;
   }
   .navbar--items ul li a {
     padding: 0.5rem;
-  }
-  .navbar--items {
-    z-index: -1000;
   }
   .navbar--items.active {
     top: 30px;
@@ -601,6 +606,7 @@ color: white;
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+
 /*Harmburger style end*/
 
 

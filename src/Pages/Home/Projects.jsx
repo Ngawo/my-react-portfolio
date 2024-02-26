@@ -20,6 +20,7 @@ const cardData = [
     description: 'This is our Python-based Bank App designed for streamlined banking processes.Our Bank App allows you to create New Account, Login to your account and Perfom',
     imageUrl: image2,
     link: 'https://github.com/Ngawo/Bank_App'
+    
   },
   {
     id: 3,
