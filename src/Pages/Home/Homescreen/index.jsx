@@ -21,8 +21,8 @@ export default function Home() {
             <HeroSection />
             <AboutMe />
             <Projects />
-            <ContactMe />
             <Services />
+            <ContactMe />
             <BackToTopButton />
             <Footer />
         </div>

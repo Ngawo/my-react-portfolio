@@ -77,7 +77,7 @@ export default function ContactForm() {
                     ref={recaptchaRef}
                     onChange={onChange}
                   />
-                  <button type="submit" className="btn btn-primary">Submit</button>
+                  <button type="submit" className="btn">Submit</button>
                 </div>
               </div>
             </div>

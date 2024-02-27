@@ -1,10 +1,10 @@
 import React from 'react';
 import CreditCard from './CreditCard';
-
 import image1 from "../../assets/images/picture1.jpg"
 import image2 from "../../assets/images/Picture2.jpg"
 import image3 from "../../assets/images/picture3.png"
 import image4 from "../../assets/images/picture4.png"
+
 
 const cardData = [
   {
@@ -25,7 +25,7 @@ const cardData = [
   {
     id: 3,
     heading: 'Financial Calculator',
-    description: 'Users can input parameters such as initial investment amount, interest rate, and investment period for the Investment Calculator, or present value of the bond, interest rate, and bond term for the Bond Calculator. Upon submission, the calculators compute and display the respective results.',
+    description: 'Allows users to input initial investment amount, interest rates, and bond term for the Bond Calculator. The calculator compute and display the respective results.',
     imageUrl: image3,
     link: 'https://github.com/Ngawo/financial_calculator'
   },
@@ -41,12 +41,11 @@ const cardData = [
 function App() {
   return (
     <div className="card-container">
-      
       {cardData.map(card => (
         <CreditCard key={card.id} heading={card.heading} description={card.description} imageUrl={card.imageUrl} link={card.link} />
       ))}
       <style>
-        {`
+      {`
           .card-container img {
             width: 100%; /* Adjust the width as needed */
             height: 100%; /* Maintain aspect ratio */

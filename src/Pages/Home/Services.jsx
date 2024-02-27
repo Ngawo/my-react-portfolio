@@ -4,14 +4,9 @@ import { FaBinoculars, FaBriefcase, FaSuitcase } from 'react-icons/fa';
 const Services = () => {
   return (
     <section id="services" className="services-mf pt-5 route">
-      <div className="container">
+      <div className="Services--container">
         <div className="row">
-          <div className="col-sm-12">
-            <div className="title-box text-center">
-              <h2 className="title-a">Services</h2>
-              <div className="line-mf"></div>
-            </div>
-          </div>
+          <h2 className='about--section--heading'>Services</h2>
         </div>
         <div className="row">
         <ServiceItem icon={<FaBriefcase size={48} />} title="Web Design" description="I create visually appealing and functional websites by organizing content, optimizing images, and ensuring accessibility with a consistent and responsive layout." />
