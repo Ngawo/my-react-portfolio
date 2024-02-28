@@ -10,7 +10,7 @@ const cardData = [
   {
     id: 1, 
     heading: 'Construction Website',
-    description: 'This is Thee Best Group Construction Website, we developed it HTML, CSS, and JavaScript. We designed this website to be visually appealing, user friendly and made it responsive',
+    description: 'This is Thee Best Group Construction Website, we developed it HTML, CSS, and JavaScript. We designed it to be visually appealing, user friendly and responsiveness.',
     imageUrl: image1,
     link: 'https://thebestconstruction.netlify.app/#'
   },
@@ -32,7 +32,7 @@ const cardData = [
   {
     id: 4,
     heading: 'Chat App',
-    description: 'This is a real time chat we created using react, it allowed user to send and recieve a messgage',
+    description: 'Our Chat App is a real time chat app, it allows users to send and recieve massages and also we disigned it using React.',
     imageUrl: image4,
     link: 'https://theebestchat.netlify.app/'
   },
