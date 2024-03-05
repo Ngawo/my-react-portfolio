@@ -1,5 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import BackToTopButton from "./BackToTop"; 
+import "./Footer.css";
 
 export default function Footer() {
   return (
@@ -10,6 +12,7 @@ export default function Footer() {
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
       </div>
+      <BackToTopButton /> {/* Render the BackToTopButton component */}
       <div className="copyright">
         <p>&copy; Copyrights 2024. All Rights Reserved Designed by Zanele Mangqangwana.</p>
       </div>

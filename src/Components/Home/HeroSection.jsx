@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroImage from './HeroImage';
 import Typewriter from "typewriter-effect";
+import './HeroSection.css'
 
 function scrollToContactSection() {
   const contactSection = document.getElementById('contactSection');

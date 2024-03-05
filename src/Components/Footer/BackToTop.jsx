@@ -1,6 +1,7 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaArrowUp } from "react-icons/fa";
+import './Footer'
 
 function BackToTopButton() {
   const scrollToTop = () => {

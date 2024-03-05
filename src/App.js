@@ -1,29 +1,41 @@
 import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './Pages/Home/NavBar';
-import Home from './Pages/Home/Homescreen';
-import AboutMe from './Pages/Home/AboutMe';
-import Projects from './Pages/Home/Projects';
-import Services from './Pages/Home/Services';
-import ContactMe from './Pages/Home/ContactMe';
+import React, { useState } from 'react';
+import NavBar from './Components/Navigation/NavBar';
+import HeroSection from './Components/Home/HeroSection';
+import AboutMe from './Components/About/AboutMe';
+import Projects from './Components/Projects/Projects';
+import Services from './Components/Services/Services';
+import ContactMe from './Components/Contact/ContactMe';
+import Footer from './Components/Footer/Footer';
 
-
- 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <div className="App">
-        <div>
-          <NavBar />
-        </div>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="AboutMe" element={<AboutMe />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Services" element={<Services />} />
-          <Route path="/ContactMe" element={<ContactMe />} />
-          <Route path="/ContactMe" element={<ContactMe />} />
-        </Routes>
+    <div className={`app ${theme}`}>
+      <div>
+        <NavBar onThemeChange={toggleTheme} scrollToSection={scrollToSection} />
+      </div>
+      <HeroSection />
+      <AboutMe />
+      <Services />
+      <Projects />
+      <ContactMe />
+      <Footer />
     </div>
   );
 }

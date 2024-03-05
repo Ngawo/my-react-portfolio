@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
+import './ContactMe.css';
 
 export default function ContactForm() {
   const recaptchaRef = useRef(null);

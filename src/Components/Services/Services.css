@@ -1,0 +1,77 @@
+/* Services Style Start */
+
+ .services-mf{
+  margin-top: 150px;
+ }
+
+ .service-box {
+    display: grid;
+    width: 300px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 2.5rem 1.3rem;
+    border-radius: 3rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .services--section--heading {
+    font-size: 24px; /* Adjust the font size */
+    text-align: center; /* Center the heading */
+    color: #333; /* Set the text color */
+    margin-bottom: 100px; /* Add some space below the heading */
+  }
+  .service-box:hover .ico-circle {
+    transition: all 500ms ease;
+    color: #080808;
+    background-color: #080808;
+    box-shadow: 0 0 0 10px #e81cff;
+    border-radius: 50%;
+  }
+  .service-box .service-ico {
+    margin-bottom: 1rem;
+    color: #1e1e1e;
+  }
+  .service-box .ico-circle {
+    transition: all 500ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .service-box .ico-circle i {
+    line-height: 0;
+    font-size: 40px;
+    color: #0a0f0f;
+  }
+  .service-box .s-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+  }
+  .service-box .s-description {
+    color: #4e4e4e;
+  }
+  .row{
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
+  }
+  .text-center{
+    align-items: center;
+  } 
+    /* Media Queries for Responsiveness */
+   @media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+    
+    .service-box {
+      width: 100%;
+      max-width: 500px;
+      margin-left: 0;
+    }
+  } 
+  /* Services style end */

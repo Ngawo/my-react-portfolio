@@ -1,18 +1,16 @@
 import React from 'react';
 import { FaBinoculars, FaBriefcase, FaSuitcase } from 'react-icons/fa';
+import './Services.css'
 
 const Services = () => {
   return (
     <section id="services" className="services-mf pt-5 route">
       <div className="Services--container">
-        <div className="row">
-          <h2 className='about--section--heading'>Services</h2>
-        </div>
+      <h2 className='services--section--heading'>Services</h2>
         <div className="row">
         <ServiceItem icon={<FaBriefcase size={48} />} title="Web Design" description="I create visually appealing and functional websites by organizing content, optimizing images, and ensuring accessibility with a consistent and responsive layout." />
           <ServiceItem icon={<FaSuitcase size={48} />} title="Web Development" description="As a web developer, I create websites and web applications. I use languages like HTML, CSS, and JavaScript for the visual aspects and server-side scripting for functionality." />
-          <ServiceItem icon={<FaBinoculars size={48}/>} title="SEO Optimization" description="I specialize in optimizing websites for search engines to improve their visibility and rankings in search results." />
-      
+          <ServiceItem icon={<FaBinoculars size={48}/>} title="SEO Optimization" description="I specialize in optimizing websites for search engines to improve their visibility, ensuring a good user experience and rankings in search results." />
         </div>
       </div>
     </section>
@@ -36,3 +34,4 @@ const ServiceItem = ({ icon, title, description }) => {
 }
 
 export default Services;
+

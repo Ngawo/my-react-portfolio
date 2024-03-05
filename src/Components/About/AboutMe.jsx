@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../../assets/images/zan.jpg';
+import './About.css'
 
 
 function SkillBar({ skill, percentage }) {

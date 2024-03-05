@@ -1,0 +1,130 @@
+/* Contact Me */
+.contact--section {
+    display:grid;
+    grid-template-columns: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 85px; 
+    gap: 40px;
+    margin-top: 700px;
+  }
+  
+  .contact-details{
+    top: 3rem;
+    right: 5rem;
+    position: relative;
+  }
+  .map-route {
+    position: relative;
+    width: 20%;
+    height: 5rem;
+    right: 10rem;
+  }
+  .map-container{
+    position: relative;
+    top: 5rem;
+    
+  }
+  .form-wrapper {
+  position: relative;
+  margin-right: 30rem;
+  background: linear-gradient(#212121, #212121) padding-box,
+  linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 5px solid transparent;
+  border-radius: 16px; 
+  padding: 1rem;
+  width: 40rem;
+  height: 27rem;
+  color: white; 
+  }
+  .contact_info{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  }
+  .contact--label{
+    height: 5rem;
+  }
+  
+  .container {
+   width: 35rem;
+  } 
+  .contact--input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    background-image: linear-gradient(#212121, #212121);
+  }
+  .recaptcha-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    transform: scale(0.8);
+    gap:1rem;
+  }
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 360px) {
+      .form-wrapper {
+        width: 95%;
+        margin-right: 0;
+        height: auto; 
+        left: 5px; 
+      }
+      .container {
+        width: 90%;
+        right: 5px; 
+      }
+      .contact-details,
+      .map-container {
+        display: none;
+      }
+      .contact--section {
+        padding: 2rem 0.5rem; 
+      }
+    }
+    
+
+  @media screen and (max-width: 768px) {
+    .form-wrapper {
+      width: 75%;
+      margin-left: -25px;  
+      height: 490px;
+      left: 14%;
+    }
+    .container{
+      width: 90%;
+      right: 10px;
+    }
+    /* .contact--input{
+      width: 70%;
+      gap: 50px;
+      margin: 0;
+    } */
+    .contact-details,
+    .map-container {
+      display: none; 
+      
+    }
+  
+    .contact--section {
+      padding: 3rem 1rem; 
+    }
+    .recaptcha-container,
+    .submit-btn {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rems, 1fr));
+      margin-left: 90px;
+   
+    }
+    .submit-btn{
+      margin-top: 200px;
+    }
+    .recaptcha-container{
+      width: 30%;
+    }
+  }
+  /* end of contact Me Style*/
+  
+  
