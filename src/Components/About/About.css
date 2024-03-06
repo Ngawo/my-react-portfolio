@@ -115,6 +115,7 @@
         right: 0;
         text-align: center; /* Center align heading */
       }
+
       .skill-group,
       .skills-group,
       .skillz-group {
@@ -125,7 +126,38 @@
       }
     }
     
-
+    @media only screen and (max-width: 800px) {
+      .about--section--content {
+        flex-direction: column;
+        text-align: center;
+        font-size: small;
+      }
+      .about--section--img {
+        width: 90%;
+        margin-top: 2rem;
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .about--section--heading {
+        top: 2rem;
+        right: 0;
+      }
+      .about--section--rectangle {
+        width: 90%;
+        height: fit-content;
+        margin-left: 3rem;
+        margin-top: 3rem;
+      }
+      .skill-group,
+      .skills-group,
+      .skillz-group {
+        
+        margin-left: 25%;
+        margin-right: auto;
+        margin-top: 20px;
+      }
+    }
+    
     @media only screen and (max-width: 768px) {
       .about--section--content {
         flex-direction: column;

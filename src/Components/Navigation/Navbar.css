@@ -18,6 +18,7 @@
     gap: 30px;
     transition: top 0.4s ease; 
     z-index: 999;
+    margin-right: 50px;
   }
   
   .navbar--items > ul {
@@ -46,47 +47,69 @@
     text-decoration: underline;
     font-weight: bold;
   }
- .theme_container{
+.theme_container{
     width: 4rem;
     display: inline-block;
     position: relative;
     top: 10px;
   }
-  
-  .theme-button-container {
-    /* position: fixed; */
+
+.theme-button-container {
+/* position: fixed; */
     top: 10px;
     right: -400px;
   }
   
   .container {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .checkbox {
-    display: none;
-  }
-  
-  .switch .slider:before {
-    position: absolute;
-    content: '';
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #e81cff;
-    border-radius: 50%;
-    transition: transform 0.4s;
-  }
-  
-  .checkbox:checked + .switch .slider {
-    background-color: #222; 
-  }
-  
-  .checkbox:checked + .switch .slider:before {
-    transform: translateX(26px); 
-  }
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.switch .slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #e81cff;
+  border-radius: 50%;
+transition: transform 0.4s;
+}
+
+.checkbox:checked + .switch .slider {
+  background-color: #222;
+}
+
+.checkbox:checked + .switch .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
   
   /*Theme styles */
   .dark-theme {
@@ -166,13 +189,13 @@
     border-radius: 0.625rem;
     transition: all ease-in-out 0.2s;
   }
-  @media screen and (max-width: 320px) {
+   @media screen and (max-width: 320px) {
     .navbar {
       padding: 5px;
     }
   
     .navbar--items {
-      top: 55px; /* Adjusted top position */
+      top: 5px;
     }
   
     .navbar--items ul {
@@ -181,10 +204,26 @@
   
     .nav__hamburger {
       top: 20px;
-      right: 180px;
+      right: 160px;
     }
   }
+   
+   @media screen and (max-width: 800px) {
+    
+    .navbar--items {
+      top: 55px;
+      border-right: 100%;
+    }
   
+    .navbar--items ul {
+      padding: 2rem 0 0.3rem;
+    }
+  
+    .nav__hamburger {
+      top: 20px;
+      right: 50px;
+    }
+  }
   @media screen and (max-width: 768px) {
     .navbar {
       padding: 10px;
@@ -197,7 +236,7 @@
       justify-content: center;
       background-color: rgba(255, 255, 255);
       top: 60px; /* Adjusted top position */
-      left: 0;
+      left: 20px;
       width: 100%;
       transition: all ease-in-out 0.4s;
       z-index: 1000; /* Adjusted z-index */

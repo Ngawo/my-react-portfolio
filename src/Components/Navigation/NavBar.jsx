@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { animateScroll as scroll } from 'react-scroll';
 import ThemeButton from "./ThemeButton";
 
 import './Navbar.css';
@@ -25,7 +24,7 @@ function NavBar() {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
-            const offset = 50; // Adjust this value as needed
+            const offset = 50; 
             const bodyRect = document.body.getBoundingClientRect().top;
             const elementRect = element.getBoundingClientRect().top;
             const offsetPosition = elementRect - bodyRect - offset;

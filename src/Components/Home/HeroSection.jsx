@@ -21,7 +21,7 @@ export default function HeroSection() {
                     </div>
                     <div className="hero--section--buttons">
                         <a href="/document/ZaneleMangqangwana.pdf" download>
-                            <button className="btn ">Download CV</button>
+                            <button className="btn">Download CV</button>
                         </a>
                         <button className="btn" onClick={scrollToContactSection}>Contact Me</button>
                     </div>

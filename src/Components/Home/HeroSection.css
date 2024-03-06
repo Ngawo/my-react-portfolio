@@ -33,13 +33,12 @@
 @media (max-width: 320px) {
   .hero--section {
     top: 20px;
-    padding: 60px 20px; /* Adjusted padding */
-    height: auto; /* Remove fixed height */
-    min-height: calc(100vh - 40px); /* Adjusted min-height */
-    text-align: center; /* Center align content */
+    padding: 60px 20px; 
+    height: auto; 
+    min-height: calc(100vh - 40px); 
+    text-align: center; 
     font-size: medium;
   }
-
 
   
 .hero--section--tittle-description{
@@ -47,14 +46,36 @@
   font-size: smaller;
 }
   .hero--section--buttons {
-    flex-direction: fex; /* Stack buttons vertically */
-    gap: 16px; /* Reduced gap between buttons */
+    flex-direction: fex; 
+    gap: 16px; 
   }
 
   .btn {
-    width: 100%; /* Button takes full width */
+    width: 100%; 
   }
 }
+
+@media (max-width: 800px) {
+  .hero--section {
+    top: 20px;
+    padding: 60px 20px; 
+    height: auto; 
+    min-height: calc(100vh - 40px); 
+    text-align: center; 
+    font-size: medium;
+  }
+
+.hero--section--tittle-description{
+  margin-top: 20%;
+  font-size: smaller;
+}
+  
+ 
+  .btn {
+    width: 45%; 
+  }
+}
+
 
 @media (max-width: 768px) {
   .hero--section {
