@@ -34,7 +34,7 @@
   }
   .about--section--rectangle {
     flex: 1 1 auto;
-    background: whitesmoke;
+    background: linear-gradient( whitesmoke, #e6a0ee);
     border: 5px;
     width: 510px;
     height: 15rem;
