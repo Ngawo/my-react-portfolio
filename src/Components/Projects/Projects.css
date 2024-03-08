@@ -21,7 +21,7 @@
   transform: translateX(-50%);
 }
 
-.card {
+.card2 {
   position: absolute;
   width: 20vw;
   height: 20vw;
@@ -32,11 +32,11 @@
   
 }
 
-.card.focus {
+.card2.focus {
   filter: none; 
 }
 
-.card h1 {
+.card2 h1 {
   font-family: sans-serif;
   position: relative;
   margin-top: 20px;
@@ -87,7 +87,7 @@
   transform: translateX(0%);
 }
 
-.card img {
+.card2 img {
   width: 90%;
   height: 60%;
   border-radius: 20px;
@@ -96,7 +96,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .card {
+  .card2 {
     top: 0px; 
     width: 70vw; 
     height: 90vw; 
@@ -109,7 +109,7 @@
    top: 50px; 
   }
 
-  .card h1 {
+  .card2 h1 {
     font-size: 24px; 
   }
 }

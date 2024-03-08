@@ -1,90 +1,148 @@
-/* Services Style Start */
+/* CardComponent.css */
+.services {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  margin-top: 200px;
+}
+ .services-content {
+  text-align: center;
+  margin-top: 180px;
+} 
 
- .services-mf{
-  margin-top: 150px;
- }
+.card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+.title{
+  color:black;
+  margin-top: 50px;
+}
+.description{
+  color: black;
+  margin-top:50px;
+}
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 340px;
+  height: 385px;
+  z-index: 2;
+  background:rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid whitesmoke; 
+}
 
- .service-box {
-    display: grid;
-    width: 300px;
-    height: auto;
-    background-color: whitesmoke;
-    padding: 2.5rem 1.3rem;
-    border-radius: 3rem;
-    margin-top: 3rem;
-    text-align: center;
+ .blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+} 
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
-  .services--section--heading {
-    font-size: 24px; /* Adjust the font size */
-    text-align: center; /* Center the heading */
-    color: #333; /* Set the text color */
-    margin-bottom: 100px; /* Add some space below the heading */
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
   }
-  .service-box:hover .ico-circle {
-    transition: all 500ms ease;
-    color: #080808;
-    background-color: #080808;
-    box-shadow: 0 0 0 10px #e81cff;
-    border-radius: 50%;
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
   }
-  .service-box .service-ico {
-    margin-bottom: 1rem;
-    color: #1e1e1e;
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
   }
-  .service-box .ico-circle {
-    transition: all 500ms ease;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
-  .service-box .ico-circle i {
-    line-height: 0;
-    font-size: 40px;
-    color: #0a0f0f;
+}
+@media (max-width: 768px) {
+
+  .card {
+    width: 100%; 
+    height: auto; 
   }
-  .service-box .s-title {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.4rem 0;
+}
+
+.title {
+  color: black;
+  margin-top: 30px; 
+}
+.description {
+  color: black;
+  margin-top: 30px; 
+}
+
+.bg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 340px;
+  height: 385px;
+  z-index: 2;
+  background:rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid whitesmoke; 
+}
+
+.blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+} 
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
   }
-  .service-box .s-description {
-    color: #4e4e4e;
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
   }
-  .row{
-    display: flex;
-    column-gap: 2rem;
-    margin-left: 10rem;
-    margin-bottom: 10rem;
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
   }
-  .text-center{
-    align-items: center;
-  } 
-    /* Media Queries for Responsiveness */
-   @media screen and (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0;
-    }
-    
-    .service-box {
-      width: 100%;
-      max-width: 500px;
-      margin-left: 0;
-    }
-  } 
-  @media screen and (max-width: 800px) {
-    .row {
-      flex-direction: column;
-      align-items: center;
-      margin-left: 0;
-    }
-    
-    .service-box {
-      width: 100%;
-      max-width: 500px;
-      margin-left: 0;
-    }
-  } 
-  /* Services style end */
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
