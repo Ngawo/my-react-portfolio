@@ -144,31 +144,21 @@ transition: transform 0.4s;
     padding: 20px 40px;
     border-radius: 8px;
     display: inline-block;
-    background: linear-gradient(135deg, #7F00FF, #E100FF);
-    position: relative;
-  }
-  
-  .first-letter,
-  .second-letter {
-    position: absolute;
-  }
-  
-  .first-letter {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #0f0f0e;
-    font-size: 36px;
     font-style: italic;
-  }
-  
-  .second-letter {
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  
+    
+}
+
+.first-letter,
+.second-letter {
+    position: relative;
+    color: #e81cff;
+}
+
+.first-letter {
+    font-style: italic;
+    margin-right: 5px; /* Add space between Z and . */
+}
+
   /*Harmburger Menu Style*/
   .nav__hamburger {
     display: none;

@@ -16,11 +16,6 @@ function NavBar() {
         setNavActive(false);
     }
 
-    const handleThemeChange = () => {
-        const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
-    }
-
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -38,8 +33,9 @@ function NavBar() {
 
     return (
         <nav className={`navbar ${navActive ? "active" : ""} ${theme === "dark" ? "dark-theme" : ""}`}>
+            
             <div className="nav-logo">
-                <span className="first-letter">Z</span>
+                <span className="first-letter">Z.</span>
                 <span className="second-letter">M</span>
             </div>
             <a
